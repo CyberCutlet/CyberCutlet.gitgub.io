@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+html, body{
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 4000px;
+	width:100%;
+   }
+#container{
+	width: 1200px;
+	margin: 0 auto;
+}
+a{
+	display: inline-block;
+}
+#sh{
+	z-index:0;
+}
+#page{
+	z-index:1;
+	padding-bottom:30px;
+}
+*{
+	font-family:Lobster, Ubuntu, Arial ,sens-serif;
+	box-sizing:border-box;
+}
+
+#menu{
+	background: #FF9700;
+	height: 75px;
+	text-align:center;
+}
+#menu > ul{
+	padding: 0;
+	margin:0;
+	font-size: 0;
+	overflow: hidden;
+}
+#menu > ul > li {
+	display:inline-block;
+	list-style:none;
+	font-size:16px;
+}
+#menu > ul > li a {
+	color: #fff;
+	text-decoration: none;
+	height: 75px;
+	line-height:75px;
+	padding: 0 35px;
+	position: relative;
+	color: #333;
+	z-index: 999;
+}
+#menu > ul > li a:hover{
+	color: #333;
+}
+#menu > ul > li a::before{
+	content: " ";
+	position: absolute;
+	left: -4px;
+	top: -25px;
+	width: 100%;
+	height: 150px;
+	transform:rotate(20deg);
+	background-color: rgba(255, 255, 255, 0.3);
+	opacity: 0;
+	z-index: -1;
+	
+}
+#menu > ul > li a:hover::before{
+	opacity: 1;
+}
+html{
+	background-image: url(../images/1.jpg); width:1500px;
+}
+#content-wrapper{
+	
+}
+#content{
+	background:red;
+	width:75%;
+	float:left;
+}
+#sidebar{
+	background:green;
+	width:25%;
+	float:left;
+}
+
+.clear{
+	clear: both;
+}
+#slider{
+	padding-top:0;
+	left:308px;
+	width:800px;
+	height:500px;
+}
+#content , #sidebar {
+	padding:0;
+}
